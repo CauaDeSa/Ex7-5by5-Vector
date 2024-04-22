@@ -11,16 +11,18 @@ for (int i = 0; i < size; i++)
 
 Console.WriteLine("\nEven values");
 
-for (int i = 0; i < size; i += 2)
+for (int i = 0; i < size; i++)
 {
-    Console.Write($"{numbers[i]} ");
+    if (numbers[i] % 2 == 0)
+        Console.Write($"{numbers[i]} ");
 }
 
 Console.WriteLine("\nOdd values");
 
 for (int i = 1; i < size; i += 2)
 {
-    Console.Write($"{numbers[i]} ");
+    if (numbers[i] % 2 != 0)
+        Console.Write($"{numbers[i]} ");
 }
 
 Console.WriteLine("\nFirst and last positions");
