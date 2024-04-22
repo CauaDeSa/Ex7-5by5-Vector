@@ -1,7 +1,7 @@
 ﻿int size = 10;
 int[] numbers = new int[size];
 
-Console.WriteLine("Value insert\n");
+Console.WriteLine("Value insertion\n");
 
 for (int i = 0; i < size; i++)
 {
@@ -9,7 +9,7 @@ for (int i = 0; i < size; i++)
     numbers[i] = int.Parse(Console.ReadLine());
 }
 
-Console.WriteLine("\nEven values");
+Console.WriteLine("\n\nEven values");
 
 for (int i = 0; i < size; i++)
 {
@@ -17,21 +17,18 @@ for (int i = 0; i < size; i++)
         Console.Write($"{numbers[i]} ");
 }
 
-Console.WriteLine("\nOdd values");
+Console.WriteLine("\n\nOdd values");
 
-for (int i = 1; i < size; i += 2)
+for (int i = 0; i < size; i++)
 {
     if (numbers[i] % 2 != 0)
         Console.Write($"{numbers[i]} ");
 }
 
-Console.WriteLine("\nFirst and last positions");
+Console.WriteLine("\n\nFirst and last positions");
 
-for (int i = 0; i < size; i++)
-{
-    if (i == 0 || i == size - 1)
-        Console.Write($"{numbers[i]} ");
-}
+Console.Write($"{numbers[0]} ");
+Console.Write($"{numbers[size - 1]} ");
 
 Console.WriteLine("\n\nPress any key to exit...");
 Console.ReadKey();
